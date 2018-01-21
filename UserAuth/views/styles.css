@@ -1,0 +1,95 @@
+#f1 {
+    margin-left: 40%;
+    margin-bottom: 150px;
+}
+
+#h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 30%;
+
+}
+
+#h11 {
+    font-size: 70px;
+}
+
+
+#inputEmail {
+    margin-top: 150px;
+}
+
+#inputEmail, #inputPassword {
+    margin-top: 40px;
+    /*margin-left: 30px%;*/
+
+}
+
+#fullname {
+    margin-top: 100px;
+}
+
+#c1, #c2, #c3, #c4 {
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+#h1 {
+    font-size: 80px;
+}
+
+#h3, #b1 {
+    margin-top: 30px;
+}
+
+#a1 {
+    margin-top: 50px;
+    /*margin-left: 15px;*/
+}
+
+canvas {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+.card-title {
+    color: #005cbf;
+    font-size: 50px;
+    /**/
+}
+
+#card2 {
+    /*margin-top: 20px;*/
+    background: #868e96;
+    font-size: 20px;
+    /*font-variant-position: super;*/
+}
+
+#card1 {
+    background: #e9ecef;
+    font-size: 20px;
+}
+#body{
+    width: 100%;
+    height: 100%;
+}
+
+#card3 {
+    background: lightblue;
+    font-size: 20px;
+}
+#container{
+ margin-top: 50px;
+    margin-left: 20px;
+
+}
+#card{
+    width: 30rem;
+    height: 30rem;
+    background-color:#0c5460;
+}
+#text{
+    margin-left: 30%;
+    margin-top: 18%;
+    font-size: 30px;
+}
