@@ -18,10 +18,17 @@ const User = db.define('users', {
     },
     password: DataTypes.STRING
 })
+const UserFacebook = db.define('userfacebook', {
+    id: {type: Sequelize.DataTypes.BIGINT, primaryKey: true},
+    accessToken: Sequelize.DataTypes.STRING,
+    refreshToken: {type: Sequelize.DataTypes.STRING, allowNull: true},
+    photo: {type: Sequelize.DataTypes.STRING, allowNull: true},
+
+});
 
 db.sync().then(() => "Database created")
 
 exports = module.exports = {
     db,
-    User
+    User,UserFacebook
 }

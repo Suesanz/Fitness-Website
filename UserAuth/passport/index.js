@@ -3,6 +3,7 @@ const strategies = require('./strategies')
 const User = require('../db/models').User
 
 passport.use(strategies.localStrategy)
+passport.use(strategies.facebookStrategy)
 
 passport.serializeUser(function (user, done) {
     console.log('serialize' + user.id)

@@ -16,7 +16,9 @@
     "jquery": "^3.2.1",
     "mysql2": "^1.5.1",
     "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
     "passport-local": "^1.0.0",
-    "sequelize": "^4.31.2"
+    "sequelize": "^4.31.2",
+    "socket.io": "^2.0.4"
   }
 }

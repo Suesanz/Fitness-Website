@@ -13,8 +13,17 @@ route.post('/signup', (req, res) => {
         res.redirect('/user/signin')
     })
 })
-route.post('/views/signin', passport.authenticate('local', {
-    successRedirect: '/pages/profile',
+route.get('/auth/facebook',
+    passport.authenticate('facebook'));
+
+route.get('/auth/facebook/callback',
+    passport.authenticate('facebook', { failureRedirect: '/user/signin' }),
+    function(req, res) {
+        // Successful authentication, redirect home.
+        res.redirect('/pages/premium');
+    });
+route.get('/signin', passport.authenticate('local', {
+    successRedirect: '/views/premium',
     failureRedirect: '/user/signin'
 }))
 

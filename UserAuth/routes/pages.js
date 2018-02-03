@@ -2,7 +2,7 @@ const route = require('express').Router()
 
 route.get('/guest', (r,s) => s.render('guest'))
 
-route.get('/premium', (req, res) => {
+route.get('/pages/premium', (req, res) => {
     if (req.user) {
         return res.render('premium')
     }
