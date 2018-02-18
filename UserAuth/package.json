@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bmi-calc": "^2.0.0",
+    "dependencies": "0.0.1",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
     "hbs": "^4.0.1",
@@ -17,7 +18,9 @@
     "mysql2": "^1.5.1",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
     "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
     "sequelize": "^4.31.2",
     "socket.io": "^2.0.4"
   }

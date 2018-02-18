@@ -5,10 +5,10 @@ const passport = require('./passport')
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
-app.use('/',express.static(__dirname+'/views'))
-app.use('/pages/premium',express.static(__dirname+'/views/Sockets/public'))
-app.use('/user/signup',express.static(__dirname+'/views'))
-app.use('/user/signin',express.static(__dirname+'/views'))
+app.use('/', express.static(__dirname + '/views'))
+app.use('/views/premium', express.static(__dirname + '/views'))
+app.use('/user/signup', express.static(__dirname + '/views'))
+app.use('/user/signin', express.static(__dirname + '/views'))
 app.use(session({
     secret: 'some very secret thing',
     resave: false,
@@ -19,13 +19,14 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 app.set('view engine', 'hbs')
-
+app.use('/user/login/fb',require('./routes/user'))
+app.use('/user/login/twitter', require('./routes/user'))
+app.use('/user/signin',require('./routes/user'))
 app.use('/user', require('./routes/user'))
 app.use('/pages', require('./routes/pages'))
-app.get('/', (r,s) => s.render('guest'))
+app.get('/', (r, s) => s.render('guest'))
 
-
-
+app.use('/ss',require('./routes/user'))
 const http = require('http')
 const socketio = require('socket.io')
 
@@ -78,7 +79,7 @@ io.on('connection', function (socket) {
 
 
 app.use('/premium/chat', express.static(__dirname + '../views/Sockets/public'))
-app.get('/premium/chat',(req,res)=>{
+app.get('/premium/chat', (req, res) => {
     res.render('../views/Sockets/public/index')
 })
 

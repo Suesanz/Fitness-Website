@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize')
 const DataTypes = Sequelize.DataTypes
 
-const db = new Sequelize('passportdb', 'ppuser', 'admin', {
+const db = new Sequelize('passportdb', 'ppuser', 'root', {
     dialect: 'mysql'
 })
 
@@ -25,10 +25,15 @@ const UserFacebook = db.define('userfacebook', {
     photo: {type: Sequelize.DataTypes.STRING, allowNull: true},
 
 });
-
+const UserTwitter=db.define('usertwitter',{
+    id:{type:Sequelize.DataTypes.BIGINT,primaryKey:true},
+    accessToken:Sequelize.DataTypes.STRING,
+    refreshToken:{type:Sequelize.DataTypes.STRING,allowNull:true},
+    photo:{type:Sequelize.DataTypes.STRING,allowNull:true},
+});
 db.sync().then(() => "Database created")
 
 exports = module.exports = {
     db,
-    User,UserFacebook
+    User,UserFacebook,UserTwitter
 }
