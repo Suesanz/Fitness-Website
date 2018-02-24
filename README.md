@@ -2,7 +2,7 @@
 
 # # This project is a Fitness Website having some great feature to keep a tab on your fitness.
 
-# # # Prequisites:
+# # # Prerequisites:
 
 1.Any javascript IDE supporting node js(recommended: Webstorm by Jetbrains).
 
