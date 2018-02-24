@@ -1,8 +1,8 @@
 # Fitness Website
 
-# # This project is a Fitness Website having some great feature to keep a tab on your fitness.
+## This project is a Fitness Website having some great features to keep a tab on your fitness.
 
-# # # Prerequisites:
+### Prerequisites:
 
 1.Any javascript IDE supporting node js(recommended: Webstorm by Jetbrains).
 
@@ -11,7 +11,7 @@
  
  3.The datbase created  must have same name,username as written in model.js file. If someone intended to change it please do change the configuration from sequilizer command also.
  
- # # # HOW TO SET UP?
+ ### HOW TO SET UP?
 
 **Step 1:** Run command 
       * npm install *
