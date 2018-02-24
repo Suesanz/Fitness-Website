@@ -5,8 +5,8 @@ const User = require('../db/models').User
 
 
 const facebookStrategy = (new FacebookStrategy({
-        clientID: '1948005882182736',
-        clientSecret: 'ab41d2b9fa2279b311fb8921dd04f0ca',
+        clientID: '123456789',
+        clientSecret: 'asdfghjkl',
         callbackURL: "http://localhost:3232/views/premium"
     },
     function (accessToken, refreshToken, profile, cb) {
@@ -16,8 +16,8 @@ const facebookStrategy = (new FacebookStrategy({
     }
 ));
 const twitterStrategy = (new TwitterStrategy({
-        consumerKey: '0GMmQ8zZ949pIlgbHGw8n4KFa',
-        consumerSecret: 'rs4e1CXqiwaXGRnqXYiaF5OHwxaHEVcsCPjVnBnU8UU1WDI9KZ',
+        consumerKey: '123456789',
+        consumerSecret: 'asdfghjkl',
         callbackURL: "http://127.0.0.1:3232/views/premium"
     },
     function(token, tokenSecret, profile, cb) {
