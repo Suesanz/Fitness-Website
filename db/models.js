@@ -2,7 +2,7 @@ const Sequelize = require('sequelize')
 const DataTypes = Sequelize.DataTypes
 
 const db = new Sequelize('passportdb', 'ppuser', 'root', {
-    dialect: 'mysql'
+    dialect: 'postgres'
 })
 
 const User = db.define('users', {
