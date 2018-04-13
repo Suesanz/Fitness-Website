@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,5 +24,9 @@
     "passport-twitter": "^1.0.4",
     "sequelize": "^4.31.2",
     "socket.io": "^2.0.4"
+  },
+  "engines": {
+    "node":"9",
+    "npm":"^5"
   }
 }
