@@ -1,0 +1,7 @@
+{
+  "name":"Fitness-Website",
+  "repository":"https://github.com/suesanz/Fitness-Website",
+  "addons":[
+    "heroku-postgresql:hobby-dev"
+  ]
+}
