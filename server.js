@@ -2,8 +2,10 @@ const express = require('express')
 const session = require('express-session')
 const app = express()
 const passport = require('./passport')
-const SERVER_PORT=process.env.Port || 2323
+// const SERVER_PORT=process.env.Port || 2323
+const config=require('./config')
 app.use(express.json())
+
 app.use(express.urlencoded({extended: true}))
 app.use('/', express.static(__dirname + '/views'))
 app.use('/views/premium', express.static(__dirname + '/views'))
@@ -84,4 +86,4 @@ app.get('/premium/chat', (req, res) => {
     res.render('../views/Sockets/public/index')
 })
 
-app.listen(SERVER_PORT)
+app.listen(config.PORT)

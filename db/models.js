@@ -1,20 +1,8 @@
 const Sequelize = require('sequelize')
 const DataTypes = Sequelize.DataTypes
+const config=require('../config')
 
-
-if (process.env.HEROKU_POSTGRESQL_BRONZE_URL) {
-
-
-    const db = new Sequelize(process.env.HEROKU_POSTGRESQL_BRONZE_URL, {
-        dialect: 'postgres',
-        port: '5432',
-        host: 'ec2-54-235-193-34.compute-1.amazonaws.com'
-
-    })
-}
-else{
-    db=new Sequelize('passportdb','ppuser','root')
-}
+const db = new Sequelize(config.DATABASE_URL);
 const User = db.define('users', {
     id: {
         type: DataTypes.INTEGER,
