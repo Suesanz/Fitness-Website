@@ -16,7 +16,7 @@
     "express-session": "^1.15.6",
     "hbs": "^4.0.1",
     "jquery": "^3.2.1",
-   "mysql2": "^1.5.1",
+    "mysql2": "^1.5.1",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1",
     "passport-google-oauth": "^1.0.0",
@@ -30,5 +30,8 @@
   "engines": {
     "node": "9",
     "npm": "^5"
+  },
+  "production": {
+    "use_env_variable": "postgres://clmtkuyzphqywi:b68e42452f48ca3cfd75f90893fa7f05a05e7a4b28fa272f4ed2e764dbd11833@ec2-54-235-193-34.compute-1.amazonaws.com:5432/dea8mj5ini0l3o"
   }
 }
