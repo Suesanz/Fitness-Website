@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/17c7962084.js"></script>
+</head>
+<body  id="b1" >
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <img src="../pics/stock-vector-man-and-woman-of-fitness-silhouette-character-220016503.jpg" height="50" width="80">
+    <a class="navbar-brand" href="guest.hbs">Fitness</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bmi/index.html">BMI Calculator</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/user/signup">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+<div class="card" style="width: 33rem;" id="div1">
+    <h2 > <strong>Macros Calculator</strong></h2>
+    <form id="f1">
+        <p id="p1"><strong>Enter Age</strong></p>
+        <input  class="form-control" aria-label="Default" style="width: 13rem" id="age">
+        <p id="p2"><strong>Gender</strong></p>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1"><strong>Male</strong> </label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2"><strong>Female</strong></label></div>
+        <p id="p3"><strong>Enter Weight</strong></p>
+        <input  class="form-control" aria-label="Default" style="width: 13rem" id="weight">
+        <p id="p4"><strong>Enter Height</strong></p>
+        <input  class="form-control" aria-label="Default" style="width: 13rem" id="height">
+        <p id="p5"><strong>Goals</strong></p>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline3" name="customRadioInline2" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline3"><strong>Fat loss</strong> </label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline4" name="customRadioInline2" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline4"><strong>Muscle Gainz</strong></label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline5" name="customRadioInline2" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline5"><strong>Maintenance</strong></label>
+        </div><p></p>
+        <p id="p6"><strong>Activity Level</strong></p>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline6" name="customRadioInline3" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline6"><strong>Lightly active (moderate exercise but sedentary job)</strong></label>
+        </div><p></p>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline7" name="customRadioInline3" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline7"><strong>Moderately active (intense exercise but sedentary job)</strong></label>
+        </div><p></p>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline8" name="customRadioInline3" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline8"><strong>Very active (moderate exercise and active job)</strong></label>
+        </div><p></p>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline9" name="customRadioInline4" class="custom-control-input">
+            <label  id="l1" class="custom-control-label" for="customRadioInline9"><strong>Extra active (intense exercise and active job)</strong></label>
+        </div><p></p>
+        <strong>
+        <div id="results1" class="text-center">
+             Your macros are:<p></p>
+
+        </div>
+        <div id="results2" class="text-center">
+
+        </div>
+        <div id="results3" class="text-center">
+
+        </div>
+        <div id="results4" class="text-center">
+
+        </div>
+        </strong>
+
+        <button type="button" onclick="macrosCalc()" class="btn btn-primary">Calculate</button>
+
+    </form>
+</div>
+<!--<footer class="page-footer center-on-small-only blue-grey lighten-5 pt-0">-->
+
+    <!--<div style="background-color: #21d192;">-->
+        <!--<div class="container">-->
+            <!--&lt;!&ndash;Grid row&ndash;&gt;-->
+            <!--<div class="row py-4 d-flex align-items-center">-->
+
+                <!--&lt;!&ndash;Grid column&ndash;&gt;-->
+                <!--<div class="col-12 col-md-5 text-left mb-4 mb-md-0">-->
+                    <!--<h6 class="mb-0 white-text text-center text-md-left"><strong>Get connected with us on social-->
+                        <!--networks!</strong></h6>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;Grid column&ndash;&gt;-->
+
+                <!--&lt;!&ndash;Grid column&ndash;&gt;-->
+                <!--<div class="col-12 col-md-7 text-center text-md-right">-->
+                    <!--&lt;!&ndash;Facebook&ndash;&gt;-->
+                    <!--<a class="icons-sm fb-ic ml-0"><i class="fa fa-facebook white-text mr-lg-4"> </i></a>-->
+                    <!--&lt;!&ndash;Twitter&ndash;&gt;-->
+                    <!--<a class="icons-sm tw-ic"><i class="fa fa-twitter white-text mr-lg-4"> </i></a>-->
+                    <!--&lt;!&ndash;Google +&ndash;&gt;-->
+                    <!--<a class="icons-sm gplus-ic"><i class="fa fa-google-plus white-text mr-lg-4"> </i></a>-->
+                    <!--&lt;!&ndash;Linkedin&ndash;&gt;-->
+                    <!--<a class="icons-sm li-ic"><i class="fa fa-linkedin white-text mr-lg-4"> </i></a>-->
+                    <!--&lt;!&ndash;Instagram&ndash;&gt;-->
+                    <!--<a class="icons-sm ins-ic"><i class="fa fa-instagram white-text mr-lg-4"> </i></a>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;Grid column&ndash;&gt;-->
+
+            <!--</div>-->
+            <!--&lt;!&ndash;Grid row&ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash;Footer Links&ndash;&gt;-->
+    <!--<div class="container mt-5 mb-4 text-center text-md-left">-->
+        <!--<div class="row mt-3">-->
+
+            <!--&lt;!&ndash;First column&ndash;&gt;-->
+            <!--<div class="col-md-3 col-lg-4 col-xl-3 mb-r dark-grey-text">-->
+                <!--<h6 class="title font-bold"><strong>FITNESS MOTIVE</strong></h6>-->
+                <!--<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">-->
+                <!--<p>Thanks so much for the opportunity to speak on the topic of resiliency at the Spirit of U event-->
+                    <!--earlier today.</p>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;/.First column&ndash;&gt;-->
+
+            <!--&lt;!&ndash;Second column&ndash;&gt;-->
+            <!--<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">-->
+                <!--<h6 class="title font-bold"><strong>Interests</strong></h6>-->
+                <!--<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">-->
+                <!--<p><a href="#!" class="dark-grey-text">CYCLING</a></p>-->
+                <!--<p><a href="#!" class="dark-grey-text">FOOTBALL</a></p>-->
+                <!--<p><a href="#!" class="dark-grey-text">SWIMMING</a></p>-->
+                <!--<p><a href="#!" class="dark-grey-text">BODYBUILDING</a></p>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;/.Second column&ndash;&gt;-->
+
+            <!--&lt;!&ndash;Third column&ndash;&gt;-->
+            <!--<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-r dark-grey-text">-->
+                <!--<h6 class="title font-bold"><strong>Useful links</strong></h6>-->
+                <!--<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">-->
+                <!--<p><a href="profile.hbs" class="dark-grey-text">Your Account</a></p>-->
+                <!--<p><a href="#!" class="dark-grey-text">BLOG</a></p>-->
+                <!--&lt;!&ndash;<p><a href="#!" class="dark-grey-text"></a></p>&ndash;&gt;-->
+                <!--<p><a href="#!" class="dark-grey-text">Help</a></p>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;/.Third column&ndash;&gt;-->
+
+            <!--&lt;!&ndash;Fourth column&ndash;&gt;-->
+            <!--<div class="col-md-4 col-lg-3 col-xl-3 dark-grey-text">-->
+                <!--<h6 class="title font-bold"><strong>Contact</strong></h6>-->
+                <!--<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">-->
+                <!--<p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>-->
+                <!--<p><i class="fa fa-envelope mr-3"></i> info@example.com</p>-->
+                <!--<p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>-->
+                <!--<p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;/.Fourth column&ndash;&gt;-->
+
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Footer Links&ndash;&gt;-->
+
+    <!--&lt;!&ndash; Copyright&ndash;&gt;-->
+    <!--<div class="footer-copyright">-->
+        <!--<div class="container-fluid">-->
+            <!--© 2017 Copyright: <a href="https://www.fitness.com"><strong> Fitness.com</strong></a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash;/.Copyright &ndash;&gt;-->
+
+<!--</footer>-->
+<script src="script.js"></script>
+</body>
+</html>
