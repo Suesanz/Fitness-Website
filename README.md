@@ -21,3 +21,7 @@
 **Step 3:** Run command
       * node server.js *
        and open the respective port mentioned in your browser.
+       
+ ### Deploy to heroku
+ 
+      [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
