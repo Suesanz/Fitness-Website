@@ -7,7 +7,7 @@ const config=require('../config')
 const facebookStrategy = (new FacebookStrategy({
         clientID: config.facebook.clientID,
         clientSecret: config.facebook.clientSecret,
-        callbackURL: "https://localhost:3232/user/premium"
+        callbackURL: "https://fitnessthez.herokuapp.com/user/premium"
     },
     function (accessToken, refreshToken, profile, cb) {
         User.findOrCreate({facebookId: profile.id}, function (err, user) {
@@ -18,7 +18,7 @@ const facebookStrategy = (new FacebookStrategy({
 const twitterStrategy = (new TwitterStrategy({
         consumerKey: config.twitter.consumerKey,
         consumerSecret: config.twitter.consumerSecret,
-        callbackURL: "https://127.0.0.1:3232/user/premium"
+        callbackURL: "https://fitnessthez.herokuapp.com/user/premium"
     },
     function(token, tokenSecret, profile, cb) {
         User.findOrCreate({ twitterId: profile.id }, function (err, user) {
