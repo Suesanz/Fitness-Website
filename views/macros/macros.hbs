@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/17c7962084.js"></script>
+</head>
+<body id="b1">
+<form action="/user/macros">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <img src="../pics/stock-vector-man-and-woman-of-fitness-silhouette-character-220016503.jpg" height="50"
+             width="80">
+        <a class="navbar-brand" href="guest.hbs">Fitness</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bmi/index.html">BMI Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/user/signup">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <div class="card" style="width: 33rem;" id="div1">
+        <h2><strong>Macros Calculator</strong></h2>
+        <form id="f1">
+            <p id="p1"><strong>Enter Age</strong></p>
+            <input class="form-control" aria-label="Default" style="width: 13rem" id="age">
+            <p id="p2"><strong>Gender</strong></p>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1"><strong>Male</strong> </label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2"><strong>Female</strong></label></div>
+            <p id="p3"><strong>Enter Weight</strong></p>
+            <input class="form-control" aria-label="Default" style="width: 13rem" id="weight">
+            <p id="p4"><strong>Enter Height</strong></p>
+            <input class="form-control" aria-label="Default" style="width: 13rem" id="height">
+            <p id="p5"><strong>Goals</strong></p>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline3" name="customRadioInline2" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline3"><strong>Fat loss</strong> </label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline4" name="customRadioInline2" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline4"><strong>Muscle Gainz</strong></label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline5" name="customRadioInline2" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline5"><strong>Maintenance</strong></label>
+            </div>
+            <p></p>
+            <p id="p6"><strong>Activity Level</strong></p>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline6" name="customRadioInline3" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline6"><strong>Lightly active (moderate exercise
+                    but sedentary job)</strong></label>
+            </div>
+            <p></p>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline7" name="customRadioInline3" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline7"><strong>Moderately active (intense exercise
+                    but sedentary job)</strong></label>
+            </div>
+            <p></p>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline8" name="customRadioInline3" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline8"><strong>Very active (moderate exercise and
+                    active job)</strong></label>
+            </div>
+            <p></p>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline9" name="customRadioInline4" class="custom-control-input">
+                <label id="l1" class="custom-control-label" for="customRadioInline9"><strong>Extra active (intense
+                    exercise and active job)</strong></label>
+            </div>
+            <p></p>
+            <strong>
+                <div id="results1" class="text-center">
+                    Your macros are:<p></p>
+
+                </div>
+                <div id="results2" class="text-center">
+
+                </div>
+                <div id="results3" class="text-center">
+
+                </div>
+                <div id="results4" class="text-center">
+
+                </div>
+            </strong>
+
+            <button type="button" onclick="macrosCalc()" class="btn btn-primary">Calculate</button>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</form>
+</body>
+</html>

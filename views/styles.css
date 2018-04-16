@@ -14,8 +14,6 @@
     font-size: 70px;
 }
 
-
-
 #inputEmail {
     margin-top: 150px;
 }
@@ -56,6 +54,7 @@ canvas {
 .card-title {
     color: #005cbf;
     font-size: 50px;
+    font-family: 'Pacifico', cursive;
     /**/
 }
 
@@ -70,7 +69,8 @@ canvas {
     background: #e9ecef;
     font-size: 20px;
 }
-#body{
+
+#body {
     width: 100%;
     height: 100%;
 }
@@ -79,18 +79,39 @@ canvas {
     background: lightblue;
     font-size: 20px;
 }
-#container{
- margin-top: 50px;
+
+#container {
+    margin-top: 50px;
     margin-left: 20px;
 
 }
-#card{
+
+#card {
     width: 30rem;
     height: 30rem;
-    background-color:#0c5460;
+    background-color: #0c5460;
 }
-#text{
+
+#text {
     margin-left: 30%;
     margin-top: 18%;
     font-size: 30px;
 }
+
+#premiumsearch {
+    width: 9cm;
+}
+
+
+/*font-family: 'Lobster', cursive;*/
+
+/*font-family: 'Pacifico', cursive;*/
+
+/*font-family: 'Bree Serif', serif;*/
+
+/*font-family: 'Dancing Script', cursive;*/
+
+/*font-family: 'Great Vibes', cursive;*/
+
+/*font-family: 'Kaushan Script', cursive;*/
+

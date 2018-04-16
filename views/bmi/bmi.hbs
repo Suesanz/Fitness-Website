@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/17c7962084.js"></script>
+</head>
+<body background="../pics/Fitness-Man-Body.jpg" id="body">
+<form action="/user/bmi">
+    <div class="container" id="container">
+        <div class="panel">
+            <h2 class="text-center" id="h2"><strong>Check your BMI</strong></h2>
+
+            <p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
+
+            <form>
+                <div id="weightInput">
+                    <p id="p1">Put your weight in here (KG)</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <!--<span class="input-group-text" id="inputGroup-sizing-default">Default</span>-->
+                        </div>
+                        <input type="text" class="form-control"
+                               aria-describedby="inputGroup-sizing-default" id="weight" type="number" pattern="[0-9]*"
+                               name="a">
+                    </div>
+                    <!--<input/>-->
+                </div>
+                <div id="heightInput">
+                    <p id="p2">And your height in here (CM)</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <!--<span class="input-group-text" id="inputGroup-sizing-default">Default</span>-->
+                        </div>
+                        <input type="text" class="form-control" aria-label="Default"
+                               aria-describedby="inputGroup-sizing-default" id="height" type="number" pattern="[0-9]*"
+                               name="b">
+                    </div>
+                    <!--<input/>-->
+                </div>
+                <button type="button" class="btn btn-primary" onclick="calculate()">Calculate BMI</button>
+            </form>
+            <div id="results" class="text-center">Your BMI results will appear here</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</form>
+</body>
+</html>

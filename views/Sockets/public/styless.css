@@ -1,0 +1,48 @@
+#card1{
+    margin-left: 38%;
+    margin-top: 7%;
+/*background-color:#6c6d6b ;*/
+    /*color: #6c6d6b;*/
+    color: #3B444B;
+}
+.navbar-default{
+    background-color: #3B444B;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2em;
+    color: #BCB1BF;
+}
+a{
+    color: #BCB1BF;
+}
+.btn-default{
+    background-color:#0c5460 ;
+}
+body{
+    background-image: url("../../pics/old_notebook-wallpaper-1920x1080.jpg");
+
+    }
+img{
+    opacity: 0.2;
+}
+.card-header{
+
+    font-family: 'Pacifico', cursive;
+}
+.btn{
+    font-family: 'Bree Serif', serif;
+}
+h1{
+font-size: 4em;
+    font-family: 'Dancing Script', cursive;
+}
+
+font-family: 'Lobster', cursive;
+
+
+
+
+
+font-family: 'Great Vibes', cursive;
+
+
+

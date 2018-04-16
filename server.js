@@ -8,7 +8,9 @@ app.use(express.json())
 
 app.use(express.urlencoded({extended: true}))
 app.use('/', express.static(__dirname + '/views'))
-app.use('/views/premium', express.static(__dirname + '/views'))
+app.use('/user/premium', express.static(__dirname + '/views'))
+app.use('/user/macros', express.static(__dirname + '/views'))
+app.use('/user/bmi', express.static(__dirname + '/views'))
 app.use('/user/signup', express.static(__dirname + '/views'))
 app.use('/user/signin', express.static(__dirname + '/views'))
 app.use(session({

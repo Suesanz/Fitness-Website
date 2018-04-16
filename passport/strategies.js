@@ -2,12 +2,12 @@ const LocalStrategy = require('passport-local').Strategy
 const FacebookStrategy = require('passport-facebook').Strategy
 const TwitterStrategy = require('passport-twitter').Strategy
 const User = require('../db/models').User
-
+const config=require('../config')
 
 const facebookStrategy = (new FacebookStrategy({
-        clientID: '123456789',
-        clientSecret: 'asdfghjkl',
-        callbackURL: "http://localhost:3232/views/premium"
+        clientID: config.facebook.clientID,
+        clientSecret: config.facebook.clientSecret,
+        callbackURL: "https://localhost:3232/user/premium"
     },
     function (accessToken, refreshToken, profile, cb) {
         User.findOrCreate({facebookId: profile.id}, function (err, user) {
@@ -16,9 +16,9 @@ const facebookStrategy = (new FacebookStrategy({
     }
 ));
 const twitterStrategy = (new TwitterStrategy({
-        consumerKey: '123456789',
-        consumerSecret: 'asdfghjkl',
-        callbackURL: "http://127.0.0.1:3232/views/premium"
+        consumerKey: config.twitter.consumerKey,
+        consumerSecret: config.twitter.consumerSecret,
+        callbackURL: "https://127.0.0.1:3232/user/premium"
     },
     function(token, tokenSecret, profile, cb) {
         User.findOrCreate({ twitterId: profile.id }, function (err, user) {
