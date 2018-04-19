@@ -2,8 +2,12 @@
 
 ## This project is a Fitness Website having some great features to keep a tab on your fitness.
 
+   Check it out at https://fitnessthez.herokuapp.com
+
 ## Deploy to heroku
- 
+
+  ### Step 1: Database setup
+  ### Step 2: Deploy
   <a href="https://heroku.com/deploy?template=https://github.com/Suesanz/Fitness-Website">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
