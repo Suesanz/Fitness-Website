@@ -38,20 +38,15 @@ input {
     margin-bottom: 10px;
     /*background-color: rgba(0,0,0,.4);*/
     outline: none;
-    /*color: #fff;*/
     font-size: 14px;
 }
 
-input:focus {
-    /*border: 2px solid rgba(0,0,0,.4);*/
-    /*background-color: rgb(60,60,60);*/
-}
+
 
 form {
-    /*background-color: #fff;*/
+
     padding: 20px;
-    /*color: #000;*/
-    /*box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);*/
+
 }
 
 form p {

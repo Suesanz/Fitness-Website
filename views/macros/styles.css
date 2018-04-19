@@ -1,46 +1,48 @@
-.card{
-/*width: 50%;*/
+.card {
 
-   background-color: rgba(0,28,222,0.08);
+    background-color: rgba(0, 28, 222, 0.08);
     margin-left: 25px;
 
 }
-#f1{
-    /*align-content: center;*/
-margin-left: 16px;
-}
-body
-{
-    background-image:url("../pics/shutterstock_256855414.jpg");
 
+#f1 {
+    margin-left: 16px;
+}
+
+#premiumsearch {
+    width: 9cm;
+}
+
+body {
     background-size: 110%;
 }
 
-#p1,#p2,#p3,#p4,#p5,#p6{
-font-size: 25px;
+#p1, #p2, #p3, #p4, #p5, #p6 {
+    font-size: 25px;
 
-    color: rgba(0,28,169,1);
+    color: #005cbf;
     font-family: "Comic Sans MS";
 }
-#l1{
+
+#l1 {
     margin-bottom: 20px;
 }
-#results1,#results2,#results3,#results4{
-    margin-top:19px;
-    color: rgba(0,28,169,1);
+
+#results1, #results2, #results3, #results4 {
+    margin-top: 19px;
+    color: rgba(0, 28, 169, 1);
     font-size: 20px;
 }
-input,button{
+
+input, button {
     margin-bottom: 12px;
 }
-h2{
+
+h2 {
     margin-top: 80px;
     font-size: 42px;
     margin-bottom: 35px;
     margin-left: 19%;
-    color:rgba(0,28,169,1);
+    color: rgba(0, 28, 169, 1);
     font-family: "Bookman Old Style";
 }
-/*{*/
-    /*opacity: 0.8;*/
-/*}*/
