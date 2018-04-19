@@ -8,6 +8,10 @@ route.get('/premium',(r,s)=>s.render('premium'))
 route.get('/macros',(r,s)=>s.render('./macros/macros'))
 route.get('/bmi',(r,s)=>s.render('./bmi/bmi'))
 
+route.post('/signin', passport.authenticate('local', {
+    successRedirect: '/user/premium',
+    failureRedirect: '/user/signin'
+}))
 route.post('/signup', (req, res) => {
     User.create({
         username: req.body.username,
@@ -34,9 +38,6 @@ route.get('/login/fb/callback',
         // Successful authentication, redirect home.
         res.redirect('/user/premium');
     });
-route.get('/signin', passport.authenticate('local', {
-    successRedirect: '/user/premium',
-    failureRedirect: '/user/signin'
-}))
+
 
 exports = module.exports = route
