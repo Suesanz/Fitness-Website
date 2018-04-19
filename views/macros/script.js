@@ -20,35 +20,35 @@ function macrosCalc() {
              fat =(weight*0.87)
              carbs = (weight * 2) + 100
              protein = weight * 2 + 20
-             calories = weight * 4
+             calories = weight * 36
         } else if (customRadioInline4) {
              fat =(weight*9.7)
              carbs = (weight * 2) + 140
              protein = weight * 2 + 30
-             calories = weight * 4
+             calories = weight * 36
         } else {
              fat = weight*0.97
              carbs = (weight * 2) + 120
              protein = weight * 2 + 10
-             calories = weight * 4
+             calories = weight * 36
         }
     } else {
         if (customRadioInline3) {
              fat = weight*0.87
              carbs = (weight * 2) + 80
              protein = weight * 2 + 20
-             calories = weight * 4
+             calories = weight * 36
         } else if (customRadioInline4) {
              fat = weight*0.97
              carbs = (weight * 2) + 140
              protein = weight * 2 + 20
-             calories = weight * 4
+             calories = weight * 36
 
         } else {
              fat = weight*0.97
              carbs = (weight * 2) + 140
              protein = weight * 2
-             calories = weight * 4
+             calories = weight * 36
         }
 
     }
@@ -60,6 +60,6 @@ function macrosCalc() {
         document.getElementById("results1").innerHTML = "Fat = "+fat.toFixed(2)+" G per day"
         document.getElementById("results2").innerHTML = "Carbs = "+carbs+" G per day"
         document.getElementById("results3").innerHTML = "Protein = "+protein+" G per day"
-        document.getElementById("results4").innerHTML = "Calories = "+calories+" G per day"
+        document.getElementById("results4").innerHTML = "Calories = "+calories+" Calories per day"
     }
 }
