@@ -22,34 +22,38 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-    <img src="pics/logo.jpg" height="50" width="80">
-    <a class="navbar-brand" href="/">Fitness</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/user/bmi">BMI Calculator</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="/user/signup">Sign Up</a>
-            </li>
-        </ul>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
+            <img src="pics/logo.jpg" height="60" width="90" class="logo">
+            <a class="navbar-brand" href="/">Fitness</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user/bmi">BMI Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/user/signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+            <!--<form class="form-inline">-->
+            <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+            <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+            <!--</form>-->
+        </nav>
     </div>
-    <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-</nav>
+</div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -89,7 +93,7 @@
             <!--<img class="card-img-top" src="..." alt="Card image cap">-->
             <div class="card-body" id="card1">
                 <h2 class="card-title" style=""><strong>Why Sports Fitness?</strong></h2>
-                <p class="card-text" style="background-image:image(burlywood)"><em>Just a few of the benefits of being
+                <p class="card-text" style="background-image:image(burlywood); margin-top: 50px"><em>Just a few of the benefits of being
                     physically fit:
 
                     It increases your energy level.
@@ -113,7 +117,7 @@
             <div class="card-body" id="card2">
                 <h3 class="card-title"><strong>Cycling</strong></h3>
                 <p></p>
-                <p class="card-text" style="margin-top: 70px ">
+                <p class="card-text" style="margin-top: 50px ">
                 <p></p><em>The benefits of cycling are almost as endless as the country lanes you could
                 soon
                 be exploring. If you’re considering taking up cycling, and weighing it up against other potential
@@ -146,7 +150,7 @@
             <!--<img class="card-img-top" src="..." alt="Card image cap">-->
             <div class="card-body" id="card3">
                 <h2 class="card-title"><strong>Swimming</strong></h2>
-                <p class="card-text" style="margin-top: 70px"><em>If you don’t love working up a sweat but do love the
+                <p class="card-text" style="margin-top: 50px"><em>If you don’t love working up a sweat but do love the
                     benefits of a cardio
                     workout,
                     swimming may be your ideal match.
@@ -164,7 +168,7 @@
 </div>
 <footer class="page-footer center-on-small-only blue-grey lighten-5 pt-0">
 
-    <div style="background-color: #21d192;">
+    <div id="f">
         <div class="container">
             <!--Grid row-->
             <div class="row py-4 d-flex align-items-center">

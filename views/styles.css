@@ -1,3 +1,29 @@
+body {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.fixed-top {
+    left: 0.5rem;
+    right: 0.5rem;
+}
+
+.navbar, #f {
+    background: #355C7D; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #C06C84, #6C5B7B, #355C7D); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.logo {
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
 #f1 {
     margin-left: 40%;
     margin-bottom: 150px;
@@ -52,7 +78,7 @@ canvas {
 }
 
 .card-title {
-    color: #005cbf;
+    color: #3D5C7D;
     font-size: 50px;
     font-family: 'Pacifico', cursive;
     /**/
@@ -60,13 +86,20 @@ canvas {
 
 #card2 {
     /*margin-top: 20px;*/
-    background: #868e96;
+    color: #1b1e21;
+    background: #3E5151; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     font-size: 20px;
     /*font-variant-position: super;*/
 }
 
 #card1 {
-    background: #e9ecef;
+    background: #fffbd5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #b20a2c, #fffbd5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     font-size: 20px;
 }
 
@@ -76,7 +109,10 @@ canvas {
 }
 
 #card3 {
-    background: lightblue;
+    background: #1c92d2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f2fcfe, #1c92d2); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     font-size: 20px;
 }
 
@@ -86,11 +122,15 @@ canvas {
 
 }
 
-#card {
-    width: 30rem;
-    height: 30rem;
-    background-color: #0c5460;
+.card-img-top, .card-body {
+    /*height: 9cm;*/
 }
+
+/*@media (min-width: 992px) {*/
+/*.card-img-top,.card-body {*/
+/*height: 9cm;*/
+/*}*/
+/*}*/
 
 #text {
     margin-left: 30%;
@@ -98,20 +138,18 @@ canvas {
     font-size: 30px;
 }
 
-#premiumsearch {
-    width: 9cm;
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 2.6em;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
 }
 
-
-/*font-family: 'Lobster', cursive;*/
-
-/*font-family: 'Pacifico', cursive;*/
-
-/*font-family: 'Bree Serif', serif;*/
-
-/*font-family: 'Dancing Script', cursive;*/
-
-/*font-family: 'Great Vibes', cursive;*/
-
-/*font-family: 'Kaushan Script', cursive;*/
+a {
+    font-weight: bold;
+    color: #B46983;
+}
 
