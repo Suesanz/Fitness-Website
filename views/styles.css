@@ -123,14 +123,9 @@ canvas {
 }
 
 .card-img-top, .card-body {
-    /*height: 9cm;*/
+
 }
 
-/*@media (min-width: 992px) {*/
-/*.card-img-top,.card-body {*/
-/*height: 9cm;*/
-/*}*/
-/*}*/
 
 #text {
     margin-left: 30%;
