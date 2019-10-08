@@ -64,7 +64,7 @@ const http = require('http')
 //                     private: true,
 //                     sender: socketIdName[socket.id],
 //                     message: data.message,
-//                     timestamp: new Date()
+//                     timestamp: new Date
 //                 })
 //
 //             } else {
